@@ -51,7 +51,7 @@ export const LinkEmail = ({ token }: LinkEmailProps) => (
             marginBottom: '16px'
           }}
         >
-          bookskindle          
+          bookskindle
         </Text>
 
         <Text style={footer}>

@@ -12,22 +12,17 @@ import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import axios from 'axios'
 
-
 export const navPages = [
   {
     title: 'Books',
-    link: '/books' 
-  },
-  
-
-
+    link: '/books'
+  }
 ]
 
 export const Navbar = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const session = useCurrentUser()
-
 
   const onClick = async () => {
     if (!session) {
@@ -59,7 +54,7 @@ export const Navbar = () => {
                   key={index}
                   href={page.link}
                   className="flex items-center hover:text-primary hover:bg-primary/10 h-full transition duration-300 px-4 rounded-md"
-                  onClick={onClick} 
+                  onClick={onClick}
                 >
                   {page.title}
                 </Link>

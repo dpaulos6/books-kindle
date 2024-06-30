@@ -301,7 +301,7 @@ SaaS Starter Kit Author: NizarAbiZaher
 
 #### Special thanks to all the contributors below:
 
-- [dpaulos6](https://github.com/dpaulos6) - *README, Theme Config and UI*
+- [dpaulos6](https://github.com/dpaulos6) - _README, Theme Config and UI_
 
 ### Socials
 

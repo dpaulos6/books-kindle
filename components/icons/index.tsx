@@ -3,16 +3,7 @@ import React from 'react'
 import type { SVGProps } from 'react'
 
 export function StripeIcon() {
-  return (
-    <Image
-    src="/HP.svg"
-    width="16"
-    height="16"
-    alt="stripe"
-  >
-
-  </Image>
-  )
+  return <Image src="/HP.svg" width="16" height="16" alt="stripe"></Image>
 }
 
 export function ResendIcon(props: SVGProps<SVGSVGElement>) {

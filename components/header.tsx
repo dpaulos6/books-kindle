@@ -11,11 +11,10 @@ export const Header = () => {
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center text-center lg:text-left ">
           <h2 className="text-4xl font-extrabold sm:text-5xl">
-           Focus on Reading, not Buying books
+            Focus on Reading, not Buying books
           </h2>
           <p className="mt-4 text-lg text-foreground">
-            Books kindle offers thousands
-             of books for you to choose from.
+            Books kindle offers thousands of books for you to choose from.
           </p>
           <div className="flex justify-center lg:justify-start items-center mt-4">
             <Link href="/register">
@@ -27,10 +26,7 @@ export const Header = () => {
           </div>
         </div>
         <div className="flex items-center justify-center rounded-lg overflow-hidden">
-          <Kindle
-
-            
-          ></Kindle>
+          <Kindle />
         </div>
       </div>
     </div>

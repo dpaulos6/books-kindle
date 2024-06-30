@@ -1,5 +1,5 @@
 'use client'
-import {  useEffect } from 'react'
+import { useEffect } from 'react'
 import { toast } from 'react-hot-toast'
 import { useCurrentUser } from '@/hooks/use-current-user'
 import { useRouter } from 'next/navigation'
@@ -22,21 +22,14 @@ const Page = () => {
   }, [session])
 
   return (
-    <div className='flex  '>
-      
-
-   
-  
-         <button
-            className=" text-4xl flex items-center hover:text-primary hover:bg-primary/10 h-full transition duration-300 px-4 rounded-md"
-            onClick={() => (window.location.href = '/upload-books')}
-          >
-            Upload Books
-          </button>
-        
-       
+    <div className="flex  ">
+      <button
+        className=" text-4xl flex items-center hover:text-primary hover:bg-primary/10 h-full transition duration-300 px-4 rounded-md"
+        onClick={() => (window.location.href = '/upload-books')}
+      >
+        Upload Books
+      </button>
     </div>
-    
   )
 }
 

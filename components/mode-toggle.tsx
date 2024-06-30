@@ -19,15 +19,14 @@ export function ModeToggle() {
       <DropdownMenuTrigger asChild>
         <Button className="rounded-md" variant="outline" size="icon">
           <Moon className="hidden dark:block h-5 w-5" />
+          <Sun className="dark:hidden block h-5 w-5" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="">
-       
+      <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme('dark')}>
           Dark
         </DropdownMenuItem>
-     
       </DropdownMenuContent>
     </DropdownMenu>
   )

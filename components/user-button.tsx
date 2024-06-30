@@ -25,7 +25,6 @@ import { useEffect, useState } from 'react'
 
 export const UserButton = () => {
   const userButtonItems = [
-
     {
       label: 'Favorite Books',
       href: '/favoritebooks',

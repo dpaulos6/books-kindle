@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       data: {
         userId: session.metadata.userId,
         amount: session.amount_total,
-        createdAt: new Date(),
+        createdAt: new Date()
       }
     })
   }

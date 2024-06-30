@@ -60,7 +60,6 @@ export const ResetPassword = ({ token }: ResetPasswordProps) => (
             fontWeight: 'bold'
           }}
         >
-      
           <span style={gradientStyle}>BooksKindle</span>
         </Text>
 

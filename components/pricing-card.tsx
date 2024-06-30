@@ -50,7 +50,7 @@ export const PricingCard = () => {
   const [isLoading, setIsLoading] = useState(false)
   const session = useCurrentUser()
 
-  const router = useRouter();
+  const router = useRouter()
 
   const onClick = async () => {
     if (!session) {
@@ -72,12 +72,12 @@ export const PricingCard = () => {
     <section id="pricing" className="scroll-mt-4">
       {/* Title */}
       <div className="mx-auto flex flex-col items-center pb-8">
-      <div className="flex items-center pb-4 text-xl font-extrabold text-foreground">
-    <Link href="/">
-        <Logo />
-    </Link>
-    <span className="ml-1">Pricing</span>
-</div>
+        <div className="flex items-center pb-4 text-xl font-extrabold text-foreground">
+          <Link href="/">
+            <Logo />
+          </Link>
+          <span className="ml-1">Pricing</span>
+        </div>
 
         <p className="text-md opacity-50 max-w-lg text-center">
           Choose the right plan for your needs.
@@ -118,10 +118,11 @@ export const PricingCard = () => {
                     {tier.priceBefore}
                   </span>
                 ) : null}
-<span className="text-4xl font-bold">
-  {tier.name === 'Kindle Store' ? `${tier.price}/month` : `$${tier.price} `}
-</span>
-
+                <span className="text-4xl font-bold">
+                  {tier.name === 'Kindle Store'
+                    ? `${tier.price}/month`
+                    : `$${tier.price} `}
+                </span>
               </div>
               <ul className="mt-4 space-y-2.5">
                 {tier.features.map((feature, index) => (
@@ -137,15 +138,15 @@ export const PricingCard = () => {
                     {feature}
                   </li>
                 ))}
-  {!tier.yourProduct ? '' : 
-<div className='mt-1'>
-<span className="badge badge-accent select-none bg-green-500 text-white ml-1 rounded-full p-1 text-sm">
-  Updated 26 days ago
-</span>
-</div>
-
-}
-
+                {!tier.yourProduct ? (
+                  ''
+                ) : (
+                  <div className="mt-1">
+                    <span className="badge badge-accent select-none bg-green-500 text-white ml-1 rounded-full p-1 text-sm">
+                      Updated 26 days ago
+                    </span>
+                  </div>
+                )}
               </ul>
             </div>
             {/* Button */}
@@ -156,23 +157,26 @@ export const PricingCard = () => {
                 className={`w-full ${tier.yourProduct && 'hover:-translate-y-1'}`}
               >
                 {tier.cta}
-               {isLoading == true ? '...' :  <Sparkle className="ml-1 h-4 w-4" />}
-               
-
-              </Button>  
-              <div className='text-sm text-center text-base-content-secondary font-medium relative'>
-            {!tier.yourProduct ? '' : 
-            <span>One-time payment, then <span className="underline">it's yours forever</span></span> }
-           
+                {isLoading == true ? (
+                  '...'
+                ) : (
+                  <Sparkle className="ml-1 h-4 w-4" />
+                )}
+              </Button>
+              <div className="text-sm text-center text-base-content-secondary font-medium relative">
+                {!tier.yourProduct ? (
+                  ''
+                ) : (
+                  <span>
+                    One-time payment, then{' '}
+                    <span className="underline">it's yours forever</span>
+                  </span>
+                )}
+              </div>
             </div>
-            </div>
-          
           </div>
         ))}
       </div>
     </section>
   )
 }
-
-
-

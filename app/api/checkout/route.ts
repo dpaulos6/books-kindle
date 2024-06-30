@@ -59,7 +59,7 @@ export async function POST(req: Request) {
       data: {
         userId: user.user.id,
         amount: 2999,
-        createdAt: new Date(),
+        createdAt: new Date()
       }
     })
 

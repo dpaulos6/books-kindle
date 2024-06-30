@@ -8,16 +8,14 @@ import { Logo } from '@/components/logo'
 
 const sidebarPages = [
   {
-title: 'Home',
-link: '/'
-
-    },
+    title: 'Home',
+    link: '/'
+  },
   {
     title: 'Books',
-    link: '/books' 
-  },
+    link: '/books'
+  }
 ]
-
 
 interface SidebarProps {
   closeSidebar?: () => void
@@ -56,10 +54,9 @@ export const Sidebar = ({ closeSidebar }: SidebarProps) => {
             ))}
           </div>
           <div className="ml-2">
-          <h1 className="text-xl font-semibold">Account</h1>  
-
+            <h1 className="text-xl font-semibold">Account</h1>
           </div>
-          
+
           {session ? (
             <Link
               href="/register"

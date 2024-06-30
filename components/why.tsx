@@ -1,6 +1,6 @@
 // src/why.js
-import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
+import React from 'react'
+import { FaCheckCircle } from 'react-icons/fa'
 
 const Why = () => {
   return (
@@ -40,7 +40,7 @@ const Why = () => {
         ></iframe>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Why;
+export default Why

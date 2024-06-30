@@ -9,51 +9,58 @@ export const Testimonials = () => {
     {
       name: 'John Patrick ',
       avatar: '/testimonials/default.jpeg',
-      message: 'After using the Books Kindle premium package, I\'m blown away by the quality and selection of books and audiobooks. It\'s a fantastic product that I highly recommend to all book lovers.'
+      message:
+        "After using the Books Kindle premium package, I'm blown away by the quality and selection of books and audiobooks. It's a fantastic product that I highly recommend to all book lovers."
     },
     {
       name: 'Sarah Lewis',
       avatar: '/testimonials/default.jpeg',
-      message: 'I\'ve been using the Books Kindle premium package for a few months now, and it\'s been a game-changer. The ability to switch between reading and listening to audiobooks is fantastic. Highly recommended!'
+      message:
+        "I've been using the Books Kindle premium package for a few months now, and it's been a game-changer. The ability to switch between reading and listening to audiobooks is fantastic. Highly recommended!"
     },
     {
       name: 'Emily',
       avatar: '/testimonials/default.jpeg',
-      message: 'I love the variety of books available on the Books Kindle premium package. Whether I\'m in the mood for a thriller, romance, or non-fiction, there\'s always something that catches my eye.'
+      message:
+        "I love the variety of books available on the Books Kindle premium package. Whether I'm in the mood for a thriller, romance, or non-fiction, there's always something that catches my eye."
     },
     {
       name: 'Caroline Santa',
       avatar: '/testimonials/woman.jpeg',
-      message: 'As an avid reader, I can\'t recommend the Books Kindle premium package enough. It\'s convenient, affordable, and has introduced me to some amazing reads.'
+      message:
+        "As an avid reader, I can't recommend the Books Kindle premium package enough. It's convenient, affordable, and has introduced me to some amazing reads."
     },
     {
       name: 'Melissa Smith',
       avatar: '/testimonials/default.jpeg',
-      message: 'The Books Kindle premium package has transformed my reading experience. With access to a vast library of books and audiobooks, I can always find something new and exciting to dive into.'
+      message:
+        'The Books Kindle premium package has transformed my reading experience. With access to a vast library of books and audiobooks, I can always find something new and exciting to dive into.'
     },
     {
       name: 'Misto Rita',
       avatar: '/testimonials/woman_3.jpeg',
-      message: 'I\'ve tried other similar services, but none compare to the Books Kindle premium package. The selection is unbeatable, and the reading experience is seamless.'
+      message:
+        "I've tried other similar services, but none compare to the Books Kindle premium package. The selection is unbeatable, and the reading experience is seamless."
     },
     {
       name: 'Lewis p. ',
       avatar: '/testimonials/white.jpeg',
-      message: 'The Books Kindle premium package has reignited my love for reading. With such a diverse range of titles available, I\'m constantly discovering new authors and genres.'
+      message:
+        "The Books Kindle premium package has reignited my love for reading. With such a diverse range of titles available, I'm constantly discovering new authors and genres."
     },
     {
       name: 'Sarah Carter',
       avatar: '/testimonials/default.jpeg',
-      message: 'I\'ve always been a fan of physical books, but the Books Kindle premium package has converted me. The convenience of having so many books at my fingertips is unbeatable.'
+      message:
+        "I've always been a fan of physical books, but the Books Kindle premium package has converted me. The convenience of having so many books at my fingertips is unbeatable."
     },
     {
       name: 'Emily Doe',
       avatar: '/testimonials/default.jpeg',
-      message: 'I love the variety of books available on the Books Kindle premium package. Whether I\'m in the mood for a thriller, romance, or non-fiction, there\'s always something that catches my eye.'
-    },
- 
-    
-  ];
+      message:
+        "I love the variety of books available on the Books Kindle premium package. Whether I'm in the mood for a thriller, romance, or non-fiction, there's always something that catches my eye."
+    }
+  ]
 
   return (
     <div>
@@ -63,7 +70,7 @@ export const Testimonials = () => {
           Testimonials
         </h2>
         <p className="text-md opacity-50 max-w-lg text-center">
-        Here's what People have to say about us.
+          Here's what People have to say about us.
         </p>
         <AvatarCircles />
       </div>
@@ -97,5 +104,5 @@ export const Testimonials = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

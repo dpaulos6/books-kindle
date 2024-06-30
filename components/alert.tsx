@@ -1,5 +1,5 @@
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { RocketIcon } from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { RocketIcon } from 'lucide-react'
 
 export function AlertDemo() {
   return (
@@ -10,15 +10,16 @@ export function AlertDemo() {
           Heads up!
         </AlertTitle>
         <AlertDescription>
-          The first 50 clients (28 Left) will get an exclusive {' '}
+          The first 50 clients (28 Left) will get an exclusive{' '}
           <a
             href="#pricing"
             className="text-primary transition duration-300 hover:underline"
           >
             50%
-          </a> discount!
+          </a>{' '}
+          discount!
         </AlertDescription>
       </Alert>
     </div>
-  );
+  )
 }
